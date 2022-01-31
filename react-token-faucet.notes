@@ -1,0 +1,144 @@
+===REACT TOKEN FAUCET===
+------------------------
+
+#NOTES
+(https://dev.to/richardmelko/ethereum-dapp-crash-course-make-an-erc20-token-faucet-frontend-2m43)
+
+
+#DESCRIPTION
+ - This is a simple sinlge page application that allows a user to receive 100 FCT, or faucet token
+ - It contains one function to the smart contract called faucet() which will allow a user to receive 100 FCT.
+
+    The user will be able to :
+
+          . Get 100 FCT
+          . Check their FCT balance
+          . Send FCT to another address (users can do this from within MetaMask wallet, but we'll be adding that functionality to our UI anyway)
+
+
+
+#BUILD GOALS
+ - A working, live decentralised application on a sharable url connected to the Goreli testnet
+ - An understanding of the Dapp development framework and life cycle
+ - An simple (but awesome) dapp
+
+
+#FLOW 
+
+  *clientside*
+
+
+  *serverside*
+
+
+
+#DEVELOPMENT STEPS
+
+
+
+
+
+
+#QUESTIONS
+
+
+
+
+
+
+
+===APP NAME TECHNOLOGY===
+-------------------------
+
+#DIRECTIONS
+
+#PREREQUISITES
+
+
+
+#SERVER START
+
+
+
+
+#LOGINS & PASSWORDS
+
+
+*Clientside*
+
+*Serverside*
+
+
+
+
+#FULLSTACK
+
+*Languages*
+ - Language
+
+*Frameworks*
+
+      *Testing Frameworks*
+      - Framework
+
+
+
+#FRONTEND
+
+*Languages*
+ - React
+
+*Frameworks*
+
+
+      *Theming Frameworks*
+      - react-bootstrap
+
+*Libraries*
+ - ethers.js
+
+*Clientside Host*
+ - Netlify
+
+
+#BACKEND
+
+
+*Languages*
+ - Solidity
+
+      *Testing Frameworks*
+      - Chai
+      - Waffle
+      - Hardhat
+
+*Libraries*
+ - OpenZeppelin contracts
+
+
+
+
+
+#BLOCKCHAIN
+
+
+*webThree Provider*
+  - MetaMask
+
+
+*Node API Provider*
+ - Infura
+
+*Testnets*
+ - Goerli
+
+
+
+#OTHER
+
+
+*Tools*
+ - Remix IDE
+
+
+*Dependencies*
