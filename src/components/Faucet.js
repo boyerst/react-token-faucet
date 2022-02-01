@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import Message from './Message'
 
-const tokenAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+const tokenAddress = "0x87EbDA903aaeb1213056e63F49871683E62783bE"
 
 // Build out the Faucet component that we passed our contract to as props thru the component instance
 const Faucet = (props) => {
