@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ethers } from 'ethers'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
+import Message from './Message'
 
 const tokenAddress = "0x5fbdb2315678afecb367f032d93f642f64180aa3"
 
@@ -40,7 +41,7 @@ const Faucet = (props) => {
       setBalance(balance.toString());
       setShowBalance(true);
     }
-  }
+  } 
 
   async function faucet() {
     // // Validate faucet's wallet using typeOf operator
@@ -63,6 +64,11 @@ const Faucet = (props) => {
         <div className="d-grid gap-2">
         <Button onClick={faucet}>Open Spigot!</Button>
         <Button onClick={getBalance} variant="warning">Check Balance</Button>   
+        {/* 
+          If showBalance is true, then show the Message component, otherwise don't show
+          showBalance is set to true when getBalance is called via the onClick Event
+        */}
+        { showBalance ? <Message balance={balance}/> : null }
         </div>
         </Card.Body>
         </Card>
