@@ -14,7 +14,7 @@ function App() {
     <Container>
       <Row className="justify-content-md-center">
         <Col>
-          <div> our faucet </div>
+          <div>  </div>
         {/* Create react component and send it the prop 'Token' 
             'Token' is imported above and contains the ABI from our artifacts
         */}

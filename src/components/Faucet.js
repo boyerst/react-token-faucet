@@ -3,7 +3,7 @@ import { ethers } from 'ethers'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 
-const tokenAddress = 0x5fbdb2315678afecb367f032d93f642f64180aa3
+const tokenAddress = "0x5fbdb2315678afecb367f032d93f642f64180aa3"
 
 // Build out the Faucet component that we passed our contract to as props thru the component instance
 const Faucet = (props) => {
@@ -58,11 +58,11 @@ const Faucet = (props) => {
         <div>
         <Card style={{background: "rgba(227, 104, 222, 0.71)"}}>
         <Card.Body>
-        <Card.Subtitle>recieve faucet ERC20 to your wallet
+        <Card.Subtitle>Faucet
         </Card.Subtitle><br></br>
         <div className="d-grid gap-2">
-        <Button onClick={faucet}>get faucet token!</Button>
-        <Button onClick={getBalance} variant="warning">check my balance</Button>   
+        <Button onClick={faucet}>Open Spigot!</Button>
+        <Button onClick={getBalance} variant="warning">Check Balance</Button>   
         </div>
         </Card.Body>
         </Card>
