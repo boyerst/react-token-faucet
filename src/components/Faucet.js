@@ -12,17 +12,18 @@ const Faucet = (props) => {
   // Use useState hook so that we can use state in our functional component
   // Where balance = current value of state and setBalance is the function we get from the second value of the useState array that allows us to set new state
   const [balance, setBalance] = useState()
-  // 
   const [showBalance, setShowBalance] = useState(false)
 
 
   // Our getBalance() and faucet() functions need to be async as we are calling the contract that lives on the blockchain so we need them to wait at times
+
+  // Show users balance 
   async function getBalance() {
     // Validate users wallet using typeOf operator
     // "If the data type of the users' wallet is not undefined, then do these things..."
-    // Show users balance 
+
     if (typeof window.ethereum !== 'undefined') {
-      // Request user address
+      // Request access to the user's MetaMask account
       const [account] = await window.ethereum.request({ method: 'eth_requestAccounts' })
 
       // Get the data we need using the ethers.js library and assign that data to local variables
@@ -46,7 +47,7 @@ const Faucet = (props) => {
   async function faucet() {
     // // Validate faucet's wallet using typeOf operator
     if (typeof window.ethereum !== 'undefined') {
-      // Request faucet address
+      // Request access to the user's MetaMask account
       const account = await window.ethereum.request({ method: 'eth_requestAccounts' });
       // Web3 provider injected via MetaMask
       const provider = new ethers.providers.Web3Provider(window.ethereum);
